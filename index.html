@@ -3656,6 +3656,40 @@ body.cinematic-loading{
 }
 </style>
 
+
+<style>
+/* =========================================================
+   V64 - AJUSTE DO VIOLÃO NO CELULAR
+   ========================================================= */
+
+/* PC permanece como está */
+@media(max-width:720px){
+  /* reduz o violão no mobile para ficar proporcional */
+  .cin-guitar-runner{
+    width:88px !important;
+    max-width:88px !important;
+  }
+
+  /* reduz um pouco a força do brilho no celular para não "estourar" */
+  .cin-guitar{
+    filter:
+      drop-shadow(0 0 1.5px rgba(255,226,145,.68))
+      drop-shadow(0 0 5px rgba(255,198,64,.28)) !important;
+  }
+
+  /* nome central continua dominante no layout mobile */
+  .cin-title-line{
+    font-size:clamp(36px,11vw,56px) !important;
+    line-height:.92 !important;
+  }
+
+  .cin-signature > span:last-child{
+    font-size:7px !important;
+    letter-spacing:.22em !important;
+  }
+}
+</style>
+
 </head>
 <body>
 

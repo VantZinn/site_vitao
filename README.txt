@@ -1,7 +1,8 @@
-PORTFÓLIO VITOR ALEXANDRE - V63
+PORTFÓLIO VITOR ALEXANDRE - V64
 
-ALTERAÇÕES:
-- Voltou a estrela dourada original.
-- A estrela foi aumentada levemente.
-- Mantida a velocidade rápida da versão anterior.
-- Mantidas partículas, órbita e pouso no violão.
+AJUSTE MOBILE:
+- O violão foi reduzido na versão de celular.
+- Ele agora fica mais proporcional e menos dominante na tela.
+- O brilho também foi suavizado no mobile.
+- A versão de PC foi mantida.
+- O encaixe no V e a animação da estrela continuam funcionando.
