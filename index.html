@@ -3690,6 +3690,53 @@ body.cinematic-loading{
 }
 </style>
 
+
+<style>
+/* =========================================================
+   V65 - MOBILE: VIOLÃO AO LADO DO NOME
+   ========================================================= */
+
+@media(max-width:720px){
+  /* sobe e reduz o violão para ele ficar ao lado do nome */
+  .cin-guitar-runner{
+    width:74px !important;
+    max-width:74px !important;
+    top:46% !important;
+  }
+
+  /* suaviza o brilho no celular para não "inchar" visualmente */
+  .cin-guitar{
+    filter:
+      drop-shadow(0 0 1.2px rgba(255,226,145,.60))
+      drop-shadow(0 0 4px rgba(255,198,64,.20)) !important;
+  }
+
+  /* bloco do nome um pouco mais alto para o violão encaixar ao lado */
+  .cin-signature{
+    top:36% !important;
+    width:94% !important;
+  }
+
+  .cin-title-line{
+    font-size:clamp(34px,10.5vw,52px) !important;
+    line-height:.92 !important;
+    letter-spacing:.03em !important;
+  }
+
+  .cin-signature > span:last-child{
+    font-size:7px !important;
+    letter-spacing:.20em !important;
+    margin-top:3px !important;
+  }
+
+  /* fundo grande permanece discreto */
+  .cin-bg-name{
+    font-size:clamp(74px,24vw,112px) !important;
+    line-height:.78 !important;
+  }
+}
+</style>
+
 </head>
 <body>
 
@@ -4335,7 +4382,7 @@ body.cinematic-loading{
     */
     const stopX = Math.max(
       mobile ? 14 : 22,
-      (vRect.left - stageRect.left) - (runnerRect.width * (mobile ? .86 : .88))
+      (vRect.left - stageRect.left) - (runnerRect.width * (mobile ? .58 : .88))
     );
 
     const duration = mobile ? 2350 : 2600;
